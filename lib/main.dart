@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:yuni/pages/carousel/carousel.dart';
-import 'package:yuni/pages/carousel/pagesimple.dart';
-import 'package:yuni/pages/onboarding/startpage.dart';
 import 'package:yuni/pages/tutorial/TutorialPage.dart';
 
 void main() {
@@ -104,6 +101,6 @@ class _MyHomePageState extends State<MyHomePage> {
           // the App.build method, and use it to set our appbar title.
           title: Text(widget.title),
         ),
-        body: TutorialPage());
+        body: TutorialPage([StepInfo('assets/step.png', '写下你心里的声音', '支持聊天，语音，视频与通话多功能')]));
   }
 }
