@@ -56,3 +56,11 @@ class _TutorialPageState extends State<TutorialPage> {
         ));
   }
 }
+
+class TutorialStepPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+}

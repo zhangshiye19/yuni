@@ -72,24 +72,6 @@ class Hero {
   });
 }
 
-List heroes = [
-  Hero(
-    color: Color(0xFF86F3FB),
-    image: "https://game.gtimg.cn/images/lol/act/img/skin/big22009.jpg",
-    title: '寒冰射手-艾希',
-  ),
-  Hero(
-    color: Color(0xFF7D6588),
-    image: "https://game.gtimg.cn/images/lol/act/img/skin/big39006.jpg",
-    title: '刀锋舞者-艾瑞莉娅',
-  ),
-  Hero(
-    color: Color(0xFF4C314D),
-    image: "https://game.gtimg.cn/images/lol/act/img/skin/big103015.jpg",
-    title: '九尾妖狐-阿狸',
-  ),
-];
-
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
@@ -113,16 +95,15 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: TutorialPage()
-    );
+        appBar: AppBar(
+          // TRY THIS: Try changing the color here to a specific color (to
+          // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
+          // change color while the other colors stay the same.
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          // Here we take the value from the MyHomePage object that was created by
+          // the App.build method, and use it to set our appbar title.
+          title: Text(widget.title),
+        ),
+        body: TutorialPage());
   }
 }
